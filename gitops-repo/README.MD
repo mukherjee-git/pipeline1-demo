@@ -1,1 +1,10 @@
+# hello-service GitOps repo
+
+Argo CD watches this repo.
+
+Two overlays:
+- `apps/hello-service/overlays/nexus` → image from Nexus registry
+- `apps/hello-service/overlays/jfrog` → image from JFrog registry
+
+Jenkins updates `newTag` for both overlays.
 
